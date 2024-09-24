@@ -1,0 +1,109 @@
+*{
+    margin: 0;  /* Altera a margem */
+    padding: 0; /* Altera espaçamento */
+    box-sizing: border-box; /* ? */
+}
+body {
+    font-family: arial, sans-serif; /* Altera a fonte das letras */
+    line-height: 1.6; /* ? */
+    background-color: #98d3fd; /* Altera a cor de fundo */
+}
+nav {
+    position: fixed; /* Altera a posição do navegador para fixa */
+    top: 0; /* Altera para o topo */
+    width: 100%; /* Regula a largura */
+    background-color: #ff7ea7; /* Altera cor de fundo */
+    padding: 20px 0; /* Altera espaçamento */
+}
+nav ul {
+    list-style-type: none; /* Altera o tipo de lista */
+    display: flex; /* Altera para uma disposição flexível */
+    justify-content: center; /* Justifica a lista */
+}
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255); /* Altera a cor da fonte */
+    text-decoration: none; /* Coloca alguma alteração no texto  */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 10px; /* Altera espaçamento */
+    transition: color 0.3s; /* Transição */
+}
+nav ul li a:hover {
+    color: #98d3fd; /* Altera a cor da fonte */
+}
+section:not(#home){
+    padding: 100px 20px; /* Altera o espaçamento  */
+    text-align: center; /* ALinha o texto */
+    display: flex; /* Altera para uma posição flexível */
+    justify-content: center;/* Justifica os textos */
+    align-items: center; /* Alinha os itens */
+    height: 100vh; /* Regula a altura */
+}
+#home {
+    /* background-color: aliceblue;  */
+    background-image: img; /* Coloca imagem de fundo */
+    background-size: cover; /* Tamanho do fundo? */
+    background-repeat: no-repeat; /* Repetição do fundo */
+    color: rgb(255, 255, 255); /* Cor da letra */
+    height: 100vh; /* Tamanho */
+    text-align: center; /* Alinhamento de texto */
+    display: flex; /* Altera para uma posição flexível  */
+    flex-direction: column; /* ? */
+    justify-content: center; /* Justifica */
+    align-items: center; /* Alinha os itens */
+    font-size: 1.5em; /* Tamanho da fonte*/
+}
+.content {
+    display: flex; /* Organiza a disposição da página */
+    flex-direction: row; /* ? */
+    align-items: center; /* Alinha os itens */
+    justify-content: center; /* Justifica */
+}
+.content img {
+    width: 400px;/* Regula a largura */
+    height: 300px;/* Regula a altura */
+    object-fit: cover;/* ? */
+    margin-right: 20px;/* Margem para a direita */
+    border-radius: 8px;/* Borda */
+}
+.content .text {
+    max-width: 600px; /* Largura máxima */
+    text-align: left; /* Alinha o texto */
+}
+.content .text h2 { 
+    font-size: 2em; /* Fonte do texto */
+    margin-bottom: 20px; /* ? */
+    color: rgb(255, 255, 255); /* Ajusta a cor da fonte */
+}
+.content .text p {
+    font-size: 1.1em; /* Tamanho da fonte */
+    color: #ffffff; /* Cor da fonte */
+}
+#services {
+    background-color: azure; /* Cor de fundo */
+}
+#about {
+    background-color: #db4a77;  /* Cor de fundo */
+}
+
+#contact{
+    background-color: #78ddcf; /* Cor de fundo */
+}
+.cta-button { 
+    margin-top: 30px;  /* Margem de cima */
+    background-color: #db4a77;  /* Cor de fundo */
+    color: aliceblue;  /* Cor da fonte */
+    padding: 15px 30px;  /* Espaçamento */
+    font-size: 18px;  /* Tamanho da fonte */
+    border: none;  /* Borda */
+    border-radius: 15px;  /* Tamanho da borda*/
+    cursor: pointer;  /* Cursor */
+    box-shadow: 0px 4px 6px rgba(red, green, blue, alpha);  /* Cor da caixa */
+    transition: background-color 1s ease, transform 1s ease;  /* ? */
+}
+.cta-button:hover {
+background-color: #ff7ea7;
+}
